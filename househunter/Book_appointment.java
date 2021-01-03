@@ -9,12 +9,12 @@ package househunter;
  *
  * @author Dell
  */
-public class Owner_properties extends javax.swing.JFrame {
+public class Book_appointment extends javax.swing.JFrame {
 
     /**
-     * Creates new form Homepage
+     * Creates new form Bookappointment
      */
-    public Owner_properties() {
+    public Book_appointment() {
         initComponents();
     }
 
@@ -27,7 +27,6 @@ public class Owner_properties extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         homepage = new javax.swing.JPanel();
         sidebar = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -45,20 +44,24 @@ public class Owner_properties extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel3 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-
-        jLabel1.setText("jLabel1");
+        jTextField4 = new javax.swing.JTextField();
+        SignUpButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel11 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        SignUpButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
-        setUndecorated(true);
 
         homepage.setBackground(new java.awt.Color(255, 255, 255));
         homepage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -113,12 +116,12 @@ public class Owner_properties extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("My Properties");
+        jLabel14.setText("Book Appointment");
         jLabel14.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         jPanel10.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 140, 20));
 
         jLabel9.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/househunter/Images/icons8_document_20px.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/househunter/Images/icons8_calendar_plus_20px.png"))); // NOI18N
         jPanel10.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         jSeparator1.setForeground(new java.awt.Color(255, 255, 255));
@@ -163,42 +166,102 @@ public class Owner_properties extends javax.swing.JFrame {
 
         homepage.add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 550));
 
-        jTable1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTable1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jTable1.setIntercellSpacing(new java.awt.Dimension(5, 5));
-        jTable1.setSelectionBackground(new java.awt.Color(194, 24, 7));
-        jTable1.setShowGrid(false);
-        jScrollPane1.setViewportView(jTable1);
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel1.setText("House ID:");
+        homepage.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 70, 30));
 
-        homepage.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 690, 160));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        homepage.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 290, 30));
+
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel5.setText("Date:");
+        homepage.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 80, 20));
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        homepage.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, 290, -1));
+
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel6.setText("Full name:");
+        homepage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 340, 80, 20));
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        homepage.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 340, 290, -1));
+
+        jLabel10.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel10.setText("Phone number:");
+        homepage.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 380, 80, 20));
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        homepage.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 380, 290, -1));
+
+        SignUpButton.setBackground(new java.awt.Color(153, 0, 0));
+        SignUpButton.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        SignUpButton.setForeground(new java.awt.Color(255, 255, 255));
+        SignUpButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/househunter/Images/icons8_book_20px.png"))); // NOI18N
+        SignUpButton.setText("Book Appointment");
+        SignUpButton.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SignUpButton.setBorderPainted(false);
+        SignUpButton.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        SignUpButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignUpButtonActionPerformed(evt);
+            }
+        });
+        homepage.add(SignUpButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, 150, 30));
 
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "House Description", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri", 0, 12))); // NOI18N
-        jScrollPane2.setViewportView(jTextArea1);
+        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "House Owner Details", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri", 0, 12))); // NOI18N
+        jScrollPane1.setViewportView(jTextArea1);
 
-        homepage.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 580, 140));
+        homepage.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 400, 130));
+
+        jLabel11.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel11.setText("Time:");
+        homepage.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 300, 40, 20));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10:00", "12:00", "14:00", "16:00" }));
+        homepage.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 300, 90, -1));
+
+        SignUpButton1.setBackground(java.awt.Color.lightGray);
+        SignUpButton1.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        SignUpButton1.setForeground(new java.awt.Color(255, 255, 255));
+        SignUpButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/househunter/Images/icons8_search_20px_2.png"))); // NOI18N
+        SignUpButton1.setText("Find House");
+        SignUpButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        SignUpButton1.setBorderPainted(false);
+        SignUpButton1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        SignUpButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignUpButton1ActionPerformed(evt);
+            }
+        });
+        homepage.add(SignUpButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 110, -1));
 
         jPanel2.setBackground(new java.awt.Color(210, 24, 7));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("X");
-        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel12.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("X");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel5MouseClicked(evt);
+                jLabel12MouseClicked(evt);
             }
         });
 
@@ -208,38 +271,15 @@ public class Owner_properties extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(668, Short.MAX_VALUE)
-                .addComponent(jLabel5)
+                .addComponent(jLabel12)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        homepage.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 690, 20));
-
-        jPanel1.setBackground(new java.awt.Color(217, 204, 204));
-
-        jLabel10.setFont(new java.awt.Font("Calibri", 0, 19)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("My Properties");
-        jLabel10.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(556, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-        );
-
-        homepage.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 690, 30));
+        homepage.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, -1, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -255,9 +295,33 @@ public class Owner_properties extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void SignUpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SignUpButtonActionPerformed
+
+    private void SignUpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SignUpButton1ActionPerformed
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
         dispose();
-    }//GEN-LAST:event_jLabel5MouseClicked
+    }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
      * @param args the command line arguments
@@ -276,13 +340,13 @@ public class Owner_properties extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Owner_properties.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Book_appointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Owner_properties.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Book_appointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Owner_properties.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Book_appointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Owner_properties.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Book_appointment.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -290,37 +354,44 @@ public class Owner_properties extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Owner_properties().setVisible(true);
+                new Book_appointment().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton SignUpButton;
+    private javax.swing.JButton SignUpButton1;
     private javax.swing.JPanel btn_account;
     private javax.swing.JPanel btn_homepage;
     private javax.swing.JPanel homepage;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
     private javax.swing.JPanel sidebar;
     // End of variables declaration//GEN-END:variables
 }

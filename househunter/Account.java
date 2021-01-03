@@ -9,12 +9,12 @@ package househunter;
  *
  * @author Dell
  */
-public class Owner_Add extends javax.swing.JFrame {
+public class Account extends javax.swing.JFrame {
 
     /**
      * Creates new form Homepage
      */
-    public Owner_Add() {
+    public Account() {
         initComponents();
     }
 
@@ -69,10 +69,8 @@ public class Owner_Add extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jLabel21 = new javax.swing.JLabel();
@@ -303,7 +301,7 @@ public class Owner_Add extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Calibri", 0, 19)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Add Property");
+        jLabel10.setText("My Account");
         jLabel10.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -322,11 +320,8 @@ public class Owner_Add extends javax.swing.JFrame {
 
         homepage.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 690, 30));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/househunter/Images/icons8_house_80px.png"))); // NOI18N
-        homepage.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 110, 100, 110));
-
         jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel6.setText("House description:");
+        jLabel6.setText("Name:");
         homepage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, 110, 30));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -335,13 +330,6 @@ public class Owner_Add extends javax.swing.JFrame {
             }
         });
         homepage.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 140, 290, 30));
-
-        jButton2.setBackground(new java.awt.Color(153, 0, 0));
-        jButton2.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Add House");
-        jButton2.setBorderPainted(false);
-        homepage.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, 110, -1));
 
         jLabel20.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
         jLabel20.setText("Price:");
@@ -355,7 +343,7 @@ public class Owner_Add extends javax.swing.JFrame {
         homepage.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 200, 290, 30));
 
         jLabel21.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel21.setText("Address:");
+        jLabel21.setText("Email:");
         homepage.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 260, 110, 30));
 
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -411,7 +399,7 @@ public class Owner_Add extends javax.swing.JFrame {
         homepage.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 380, 290, 30));
 
         jLabel23.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel23.setText("Pictures:");
+        jLabel23.setText("Birth Year:");
         homepage.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 380, 110, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -428,17 +416,9 @@ public class Owner_Add extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jTextField6ActionPerformed
 
     private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
         dispose();
@@ -448,9 +428,17 @@ public class Owner_Add extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -469,21 +457,23 @@ public class Owner_Add extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Owner_Add().setVisible(true);
+                new Account().setVisible(true);
             }
         });
     }
@@ -495,7 +485,6 @@ public class Owner_Add extends javax.swing.JFrame {
     private javax.swing.JPanel btn_homepage;
     private javax.swing.JPanel btn_properties;
     private javax.swing.JPanel homepage;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -514,7 +503,6 @@ public class Owner_Add extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
