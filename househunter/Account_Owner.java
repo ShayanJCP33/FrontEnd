@@ -9,12 +9,12 @@ package househunter;
  *
  * @author Dell
  */
-public class Owner_Add extends javax.swing.JFrame {
+public class Account_Owner extends javax.swing.JFrame {
 
     /**
      * Creates new form Homepage
      */
-    public Owner_Add() {
+    public Account_Owner() {
         initComponents();
     }
 
@@ -69,24 +69,16 @@ public class Owner_Add extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jLabel20 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel21 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel23 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel6 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
 
         jLabel1.setText("jLabel1");
 
@@ -116,7 +108,7 @@ public class Owner_Add extends javax.swing.JFrame {
         jLabel7.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         btn_homepage.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, 160, 20));
 
-        btn_account.setBackground(new java.awt.Color(180, 0, 0));
+        btn_account.setBackground(new java.awt.Color(197, 52, 57));
         btn_account.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel13.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
@@ -205,7 +197,7 @@ public class Owner_Add extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/househunter/Images/househunterlogowhite.png"))); // NOI18N
 
-        btn_add.setBackground(new java.awt.Color(197, 52, 57));
+        btn_add.setBackground(new java.awt.Color(180, 0, 0));
         btn_add.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel15.setBackground(new java.awt.Color(180, 0, 0));
@@ -263,9 +255,11 @@ public class Owner_Add extends javax.swing.JFrame {
         sidebar.setLayout(sidebarLayout);
         sidebarLayout.setHorizontalGroup(
             sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(btn_homepage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btn_homepage, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
             .addComponent(btn_account, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(btn_properties, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btn_add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btn_add1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, sidebarLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,8 +270,6 @@ public class Owner_Add extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addComponent(btn_add, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(btn_add1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         sidebarLayout.setVerticalGroup(
             sidebarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -298,7 +290,7 @@ public class Owner_Add extends javax.swing.JFrame {
                 .addComponent(btn_add, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_add1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(187, Short.MAX_VALUE))
         );
 
         homepage.add(sidebar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 550));
@@ -307,7 +299,7 @@ public class Owner_Add extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Calibri", 0, 19)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Add Property");
+        jLabel10.setText("My Account");
         jLabel10.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -325,42 +317,6 @@ public class Owner_Add extends javax.swing.JFrame {
         );
 
         homepage.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 690, 30));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/househunter/Images/icons8_house_80px.png"))); // NOI18N
-        homepage.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 100, -1, 80));
-
-        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel6.setText("House description:");
-        homepage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, 110, 30));
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-        homepage.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 290, 30));
-
-        jButton2.setBackground(new java.awt.Color(153, 0, 0));
-        jButton2.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Add House");
-        jButton2.setBorderPainted(false);
-        homepage.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, 110, -1));
-
-        jLabel20.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel20.setText("Price:");
-        homepage.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 110, 30));
-
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
-            }
-        });
-        homepage.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 130, 290, 30));
-
-        jLabel21.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel21.setText("Address:");
-        homepage.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 110, 30));
 
         jPanel2.setBackground(new java.awt.Color(210, 24, 7));
 
@@ -389,52 +345,49 @@ public class Owner_Add extends javax.swing.JFrame {
 
         homepage.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 690, 20));
 
-        jLabel22.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel22.setText("City:");
-        homepage.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 380, 110, 30));
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel6.setText("Name:");
+        homepage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 90, 110, 30));
 
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                jTextField3ActionPerformed(evt);
             }
         });
-        homepage.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 290, 30));
+        homepage.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 290, 30));
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                jTextField4ActionPerformed(evt);
             }
         });
-        homepage.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 290, 30));
+        homepage.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 150, 290, 30));
 
-        jLabel23.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel23.setText("No. of Bedrooms:");
-        homepage.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, 110, 30));
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        homepage.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 180, 290, 30));
+        jLabel21.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel21.setText("Email:");
+        homepage.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 150, 110, 30));
 
         jLabel24.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel24.setText("Pictures:");
-        homepage.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 110, 30));
+        jLabel24.setText("Birth Year:");
+        homepage.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 110, 30));
 
-        jLabel25.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel25.setText("Property Type:");
-        homepage.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, 110, 30));
-
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTextField2ActionPerformed(evt);
             }
         });
-        homepage.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 290, 30));
+        homepage.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 210, 290, 30));
 
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jLabel23.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel23.setText("Phone Number:");
+        homepage.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 110, 30));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jTextField1ActionPerformed(evt);
             }
         });
-        homepage.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 380, 290, 30));
+        homepage.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, 290, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -450,33 +403,25 @@ public class Owner_Add extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+        dispose();
+    }//GEN-LAST:event_jLabel19MouseClicked
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
 
-    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
-        dispose();
-    }//GEN-LAST:event_jLabel19MouseClicked
-
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_jTextField4ActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -495,21 +440,35 @@ public class Owner_Add extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account_Owner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account_Owner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account_Owner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Owner_Add.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Account_Owner.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Owner_Add().setVisible(true);
+                new Account_Owner().setVisible(true);
             }
         });
     }
@@ -521,8 +480,6 @@ public class Owner_Add extends javax.swing.JFrame {
     private javax.swing.JPanel btn_homepage;
     private javax.swing.JPanel btn_properties;
     private javax.swing.JPanel homepage;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -535,15 +492,11 @@ public class Owner_Add extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -569,11 +522,9 @@ public class Owner_Add extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel28;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField4;
     private javax.swing.JPanel sidebar;
     // End of variables declaration//GEN-END:variables
 }
